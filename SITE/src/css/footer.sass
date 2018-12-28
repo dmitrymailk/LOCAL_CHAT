@@ -1,0 +1,90 @@
+.gray-2
+	background-color: #f1f1f1
+.footer
+	width: 100%
+	max-width: 1048px
+	display: flex
+	height: 143px
+	background-color: #f1f1f1
+	justify-content: center
+	align-items: center
+	align-content: center
+	&__logo
+		max-width: 225px
+		width: 100%
+		display: grid
+		align-items: center
+	&__social
+		max-width: 700px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-grow: 50
+	&__author
+		max-width: 225px
+		width: 100%
+		display: flex
+		align-items: center
+
+.social
+	&__img
+		margin-right: 40px
+	&__img:last-child
+		margin-right: 0
+
+.author
+	&__img
+		width: 40px
+		&-image
+			border-radius: 50%
+			width: 40px
+			margin-left: 25px
+	&__text
+		font-family: "Open Sans"
+		font-size: 19px
+		font-weight: 700
+		line-height: 18px
+
+@media (max-width: 1086px)
+	 .footer
+			&__logo
+				max-width: 125px
+			&__social
+				max-width: 500px
+			&__author
+				max-width: 125px
+
+@media (max-width: 1050px)
+	.footer
+		margin-top: -37px
+
+@media (max-width: 886px)
+	 .footer
+			&__logo
+				max-width: 100px
+			&__social
+				max-width: 250px
+			&__author
+				max-width: 190px
+				min-width: 190px
+	
+@media (max-width: 578px)
+	 .footer
+		 flex-direction: column
+			&__logo
+				display: none
+			&__social
+				max-width: 500px
+				border-bottom: 1px solid #e5e5e5
+				height: 80px
+			&__author
+				max-width: 125px
+				height: 80px
+		.author
+			&__img
+				width: 40px
+				&-image
+					border-radius: 50%
+					width: 40px
+					margin-left: 35px

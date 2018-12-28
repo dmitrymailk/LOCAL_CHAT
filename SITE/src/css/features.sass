@@ -1,0 +1,237 @@
+.featured
+	display: flex
+	max-width: 1050px
+	flex-basis: calc(100% - 100px)
+	height: 732px
+	margin-top: 54px
+	&__desk
+		width: 50%
+		height: 100%
+		background-color: #ffffff
+	&__img
+		background: url(../img/features/image-features.png) center
+		width: 100%
+		height: 100%
+		
+
+.desk
+	&__title
+		width: 100%
+		height: 170px
+		background-color: #ffffff
+		display: flex
+	&__about-good
+		display: flex
+		justify-content: flex-end
+
+.about-good
+
+	&__properties
+		flex-basis: 350px
+		background-color: #ffffff
+		height: 562px
+
+.title
+	&__good-week
+		display: flex
+		padding-left: 47px
+		padding-top: 70px
+		width: 70px
+		flex-grow: 1
+	&__good-name
+		display: inline-block
+		padding-left: 58px
+		padding-top: 53px
+		width: 515px
+
+.good-week
+	&__text
+		color: #63d1bb
+		font-size: 17px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		display: inline-block
+
+.good-name
+
+	&__text
+		color: #000000
+		font-size: 53px
+		font-weight: 700
+		position: absolute
+
+.properties
+
+	&__p
+		display: inline-block
+		width: 282px
+		font-size: 17px
+		font-weight: 400
+		color: #444444
+		margin: 0
+	&__table
+		width: 292px
+		background-color: #ffffff
+		margin-top: 68px
+	&__offer-good
+		margin-top: 110px
+		display: flex
+		flex-direction: column
+		width: 292px
+	&__img
+		display: none
+
+.table
+	&__prop
+		display: flex
+		height: 40px
+		border-bottom: 1px solid #ececec
+		align-items: center
+
+.prop
+	&__key
+		width: 100px
+		color: #444444
+		font-size: 15px
+		font-weight: 400
+	&__value
+		color: #444444
+		font-size: 15px
+		font-weight: 400
+
+.offer-good
+	&__price
+		color: #444444
+		font-size: 20px
+		font-weight: 700
+		text-align: center
+	&__btn
+		margin-top: 34px
+		outline: none
+		width: 292px
+		height: 52px
+		border: 2px solid #444444
+		background-color: #ffffff
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 700
+		text-transform: uppercase
+
+@media (max-width: 768px)
+	.title
+		position: relative
+		&__good-week
+			order: 2
+			padding-left: 0
+			padding-top: 0
+			position: relative
+			right: 0 
+			top: 16px
+			width: auto
+		&__good-name
+			order: 1
+			padding-left: 0
+			padding-top: 0
+			margin: 0
+			padding-top: 0
+
+	.good-name
+		&__text
+			font-size: 43px
+			margin: 0
+			padding: 0
+			position: static
+	.good-week
+		&__text
+			margin: 0
+			padding: 0
+			right: 10px
+			position: absolute
+			display: flex
+			justify-content: flex-end
+			max-width: 80px
+
+
+	
+	.desk
+		&__title
+			width: 200%
+			height: 110px
+	
+	.featured
+		height: 520px
+		&__img
+			background: url(../img/features/image-features-tablet.png) center no-repeat
+			margin-top: 52px
+	
+	.properties
+		&__table
+			margin-top: 45px
+			width: 270px
+		&__offer-good
+			margin-top: 54px
+
+@media (max-width: 578px)
+	.featured
+		justify-content: center
+		align-items: flex-start
+		margin-top: -125px
+		height: 950px
+		&__desk
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			flex-basis: 576px
+			
+		&__img
+			display: none
+		
+
+	.desk
+		&__title
+			flex-direction: column
+			height: 80px
+			width: 294px
+			justify-content: flex-start
+			align-items: flex-start
+
+	.title
+		&__good-week
+			justify-content: flex-start
+			position: static 
+			width: 150px
+		&__good-name
+			width: 250px
+	.good-week
+		max-width: 150px 
+		&__text
+			position: static	
+			justify-content: flex-start
+			max-width: 145px
+			height: 20px
+	.good-name
+		&__text
+			font-size: 25px
+	.desk
+		&__about-good
+			align-items: center
+			justify-content: center
+	.about-good
+		&__properties
+			width: 100%
+
+	.properties
+		&__img
+			display: flex
+			justify-content: center
+			margin-top: 28px
+		&__offer-good
+			margin-top: 28px
+		&__table
+			width: 292px
+	.offer-good
+		&__btn
+			margin-top: 28px

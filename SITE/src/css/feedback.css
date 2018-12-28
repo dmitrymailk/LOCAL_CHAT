@@ -1,0 +1,214 @@
+.feedback {
+  -ms-flex-preferred-size: 1048px;
+      flex-basis: 1048px;
+  height: 457px;
+  background-color: #999999;
+  background: url(../img/feedback/feedback-img.png) no-repeat;
+}
+
+.feedback-content {
+  -ms-flex-preferred-size: 876px;
+      flex-basis: 876px;
+  margin-left: 174px;
+  position: relative;
+}
+
+.feedback-content-text {
+  display: inline-block;
+}
+
+.feedback-content-text__text {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 57px;
+  margin: 70px 0 0 0;
+}
+
+.feedback-content__button {
+  width: 175px;
+  height: 52px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 78px;
+  color: #444444;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.feedback-content__people-review {
+  margin: 64px 0 0 0;
+  -ms-flex-preferred-size: 770px;
+      flex-basis: 770px;
+  max-width: 770px;
+  height: 127px;
+}
+
+.feedback-content__people-person {
+  margin-top: 0;
+  display: inline-block;
+  width: 300px;
+}
+
+.feedback-content__arrows {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 136px;
+  position: absolute;
+  right: 19px;
+  margin-top: 17px;
+}
+
+.people-review__text {
+  color: #444444;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.people-person-text__text {
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.people-person-text__text2 {
+  margin: 0;
+  color: #444444;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 6px;
+}
+
+.arrows__left {
+  margin-right: 37px;
+  cursor: pointer;
+}
+
+.arrows__left:hover {
+  opacity: 0.6;
+}
+
+.arrows__left:active {
+  opacity: 0.3;
+}
+
+.arrows__right {
+  cursor: pointer;
+}
+
+.arrows__right:hover {
+  opacity: 0.6;
+}
+
+.arrows__right:active {
+  opacity: 0.3;
+}
+
+@media (max-width: 778px) {
+  .feedback-content {
+    margin-left: 50px;
+  }
+  .feedback-content__people-review {
+    height: 175px;
+  }
+}
+
+@media (max-width: 578px) {
+  .feedback {
+    background: none;
+  }
+  .feedback-content {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback-content-text__text {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .feedback-content__arrows {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 260px;
+    height: 52px;
+    margin: 30px 0 -50px 0;
+  }
+  .feedback-content__button {
+    -webkit-box-ordinal-group: 13;
+        -ms-flex-order: 12;
+            order: 12;
+    position: relative;
+    width: 290px;
+    margin-top: 12px;
+  }
+  .feedback-content__people-review {
+    margin: 30px 0 0 0;
+    -ms-flex-preferred-size: 310px;
+        flex-basis: 310px;
+    height: 400px;
+    width: 310px;
+  }
+  .feedback-content__people-person {
+    margin-top: 43px;
+    width: 310px;
+  }
+  .arrows__left {
+    height: 52px;
+    border: 1px solid #ececec;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 40px;
+    border-right: none;
+    margin-right: 0;
+  }
+  .arrows__right {
+    height: 52px;
+    border: 1px solid #ececec;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 40px;
+  }
+}
+/*# sourceMappingURL=feedback.css.map */

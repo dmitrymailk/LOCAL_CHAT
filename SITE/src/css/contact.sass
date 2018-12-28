@@ -1,0 +1,180 @@
+.contact
+	flex-basis: 1050px
+	height: 536px
+	margin-top: 80px
+	display: flex
+	flex-wrap: wrap
+	&__location
+		display: flex
+		flex-direction: column
+		height: 359px
+		flex-basis: 50%
+	&__map
+		flex-basis: 50%
+		height: 457px
+	&__send-button
+		margin: -92px 0 0 175px
+		height: 20px
+		width: 230px
+		height: 52px
+		border: 2px solid #444444
+		background-color: #ffffff
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 700
+		line-height: 20px
+		text-transform: uppercase
+		
+
+.location
+	&__img
+		display: flex
+		margin: 64px 0 0 64px 
+		height: 81px
+		&-image
+			width: 47px
+			height: 81px
+	&__title
+		font-family: "Open Sans"
+		font-size: 53px
+		font-weight: 700
+		line-height: 57px
+		margin: 0 0 0 60px
+	&__mail
+		margin-left: 174px
+	&__placement
+		margin-left: 174px
+		margin-top: 50px
+		display: flex
+.placement
+
+	&__address
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 400
+		line-height: 30px
+	&__street
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 400
+		line-height: 30px
+		margin: 0
+		width: 219px
+		display: inline-flex
+		margin-left: 28px
+.mail
+	&__email
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 400
+		line-height: 30px
+		
+	&__address
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 400
+		line-height: 30px
+		margin: 0
+		margin-left: 28px
+			
+@media (max-width: 1050px)
+	.contact
+		height: 900px
+		width: 100%
+		display: flex
+		justify-content: flex-start
+		align-content: flex-start
+		align-items: center
+		flex-direction: column
+		&__location
+			width: 100%
+			justify-content: flex-start
+			align-content: flex-start
+			
+			order: 0
+			position: relative
+			flex-basis: 257px
+			flex-direction: row
+			flex-wrap: wrap
+		&__map
+			order: 1
+			width: 100%
+			background-color: #efefef
+			height: 457px
+		&__send-button
+			order: 2
+			margin: 54px 0 0 0
+	.location
+		&__img
+			height: 100px
+			margin: 0
+			max-width: 100%
+			width: 100%
+			&-image
+				order: 2
+				position: absolute
+				right: 20px
+		&__title
+			order: -1
+			margin: 0 0 0 168px
+			font-size: 43px
+		&__mail
+			height: 50px
+			display: flex
+			margin: 0 0 0 168px
+		&__placement
+			margin: 0 0 0 57px
+
+@media (max-width: 810px)
+	.contact
+		&__location
+			align-items: flex-start
+			justify-content: center
+
+	.location
+		&__mail
+			margin: 0 
+		&__placement
+			margin: 0 0 0 57px
+@media (max-width: 778px)
+	.contact
+		&__location
+			justify-content: flex-start
+
+	.location
+		&__title
+			margin: 0 0 0 50px
+		&__mail
+			margin: 0 0 0 56px
+
+@media (max-width: 578px)
+	.contact
+		margin-top: 230px
+		max-width: 320px
+		height: 810px
+
+		&__map
+			margin-top: 10px
+		&__send-button
+			margin-top: 40px
+			width: 260px
+
+	.location
+		&__img
+			height: 50px
+			&-image
+				display: none
+		&__title
+			margin: 0 0 0 10px
+			font-size: 25px
+		&__mail
+			margin: 25px 0 0 0
+		&__placement
+			margin: 0
+
+

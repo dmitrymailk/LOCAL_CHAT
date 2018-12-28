@@ -1,0 +1,81 @@
+.about
+	flex-basis: 698px
+	display: flex
+	flex-wrap: wrap
+	&__title
+		font-family: "Open Sans"
+		font-size: 53px
+		font-weight: 700
+		line-height: 57px
+		margin: 0 0 60px 0
+	&__line-item
+		display: flex
+		flex-wrap: no-wrap
+		margin-bottom: 60px
+
+.line-item
+	&__item1
+		flex-basis: 310px
+		height: 110px
+		margin-right: 40px
+		background-color: #fff
+	&__item2
+		flex-basis: 310px
+		height: 110px
+		background-color: #fff
+
+
+.item
+	&-img
+		margin-left: 8px
+	&-text
+		&__text
+			font-family: "Open Sans"
+			font-size: 20px
+			font-weight: 700
+			line-height: 22px
+			margin: 13px 0 0 0
+
+
+@media (max-width: 768px)
+	.about
+		justify-content: center
+		&__title
+			font-size: 43px
+			display: inline-block
+			flex-basis: 679px
+	.item
+		&-text
+			&__text
+				word-break: break-all
+				hyphens: auto
+				-moz-hyphens: auto
+				-webkit-hyphens: auto
+				-ms-hyphens: auto
+
+	
+
+@media (max-width: 578px)
+	.about
+		justify-content: center
+		margin-top: 30px
+		&__title
+			font-size: 25px
+			display: inline-block
+			flex-basis: 296px
+			margin-bottom: 38px
+		&__line-item
+			flex-wrap: wrap
+			justify-content: center
+			margin-bottom: 35px
+	.line-item
+		&__item1
+			margin: 0
+			margin-bottom: 35px
+	.item
+		&-text
+			&__text
+				font-size: 17px
+				font-weight: 700
+				line-height: 20px
+				word-break: keep-all

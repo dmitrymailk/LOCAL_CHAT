@@ -1,0 +1,150 @@
+.feedback
+	flex-basis: 1048px
+	height: 457px
+	background-color: #999999
+	background: url(../img/feedback/feedback-img.png) no-repeat
+
+	&-content
+		flex-basis: 876px
+		margin-left: 174px
+		position: relative
+		&-text
+			display: inline-block
+			&__text
+				display: inline-block
+				font-family: "Open Sans"
+				font-size: 53px
+				font-weight: 700
+				line-height: 57px
+				margin: 70px 0 0 0
+
+		&__button
+			width: 175px
+			height: 52px
+			border: 2px solid #444444
+			background-color: #ffffff
+			position: absolute
+			right: 0
+			top: 78px
+			color: #444444
+			font-family: "Open Sans"
+			font-size: 17px
+			font-weight: 700
+			line-height: 20px
+			text-transform: uppercase
+			cursor: pointer
+			outline: none
+		&__people-review
+			margin: 64px 0 0 0
+			flex-basis: 770px
+			max-width: 770px
+			height: 127px
+		&__people-person
+			margin-top: 0
+			display: inline-block
+			width: 300px
+		&__arrows
+			display: inline-flex
+			width: 136px
+			position: absolute
+			right: 19px
+			margin-top: 17px
+
+.people-review
+	&__text
+		color: #444444
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 400
+		line-height: 30px
+		margin: 0
+
+.people-person-text
+	&__text
+		font-family: "Open Sans"
+		font-size: 17px
+		font-weight: 700
+		margin: 0
+	&__text2
+		margin: 0
+		color: #444444
+		font-family: "Open Sans"
+		font-weight: 400
+		line-height: 30px
+		margin-top: 6px
+.arrows
+	
+	&__left
+		margin-right: 37px
+		cursor: pointer
+		&:hover
+			opacity: 0.6
+		&:active
+			opacity: 0.3
+	&__right
+		cursor: pointer
+		&:hover
+			opacity: 0.6
+		&:active
+			opacity: 0.3
+
+	
+@media (max-width: 778px)
+	.feedback
+		&-content
+			margin-left: 50px
+			&__people-review
+				height: 175px
+
+	
+@media (max-width: 578px)
+	.feedback
+		background: none
+		&-content
+			margin-left: 0
+			display: flex
+			flex-direction: column
+			align-items: center
+			&-text
+				&__text
+					font-size: 25px
+					line-height: 30px
+					margin: 0
+			&__arrows
+				position: static
+				display: flex
+				align-content: center
+				width: 260px
+				height: 52px
+				margin: 30px 0 -50px 0
+			&__button
+				order: 12
+				position: relative
+				width: 290px
+				margin-top: 12px
+			&__people-review
+				margin: 30px 0 0 0
+				flex-basis: 310px
+				height: 400px
+				width:  310px
+			&__people-person
+				margin-top: 43px
+				width: 310px
+	.arrows
+		&__left
+			height: 52px
+			border: 1px solid #ececec
+			flex-basis: 50%
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			padding-right: 40px
+			border-right: none
+			margin-right: 0
+		&__right
+			height: 52px
+			border: 1px solid #ececec
+			flex-basis: 50%
+			display: flex
+			align-items: center
+			padding-left: 40px

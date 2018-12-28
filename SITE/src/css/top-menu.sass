@@ -1,0 +1,123 @@
+	
+.top-menu
+ padding: 0
+ margin: 0
+ display: flex
+ flex-basis: 1150px
+ text-decoration: none
+ border-bottom: 1px solid #ececec
+
+ &__item
+  list-style-type: none
+  height: 88px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  font-size: 17px
+  font-weight: 700
+ &__item1
+  flex-basis: 236px
+  border-right: 0.2px solid #ececec
+ &__item2
+  flex-basis: 518px
+  border-right: 0.2px solid #ececec
+ &__item3
+  min-width: 85px
+  justify-content: center
+  border-right: 0.2px solid #ececec
+ &__item4
+  flex-basis: 314px
+ &__text1
+  padding-left: 50px
+ &__text2
+  padding-left: 35px
+ &__text3
+  padding-left: 30px
+ &__logo
+  padding-left: 78px
+ &__logo:hover
+	 opacity: 0.6
+	 cursor: pointer
+ &__logo:active
+	 opacity: 0.3
+ &__buy
+  padding-left: 30px
+ &__buy:hover
+	 cursor: pointer
+ &__logo-tablet
+  display: none
+ &__logo-mobile
+  display: none
+ &__text:hover
+	 opacity: 0.6
+	 cursor: pointer
+ &__text:active
+	 opacity: 0.3
+ &__search
+	 opacity: 0.9
+ &__search:hover
+	 cursor: pointer
+
+
+	
+body
+	font-family: 'Open Sans', sans-serif
+	margin: 0
+
+.container
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+
+@media (max-width: 992px)
+ .top-menu
+ 
+  &__logo
+ 	 display: none
+
+  &__text1
+	  padding: 30px
+
+  &__item2
+	  flex-basis: 218px
+
+@media (max-width: 768px)
+ .top-menu
+	 
+  &__logo-tablet
+	  display: block
+	  padding-left: 50px
+	
+  &__item1
+	  display: none
+
+  &__text2
+	  display: none
+  
+  &__item2
+	  flex-basis: 374px
+		flex-shrink: 330 
+
+  &__item4
+	  flex-basis: 314px
+
+  &__item2
+	  border: none
+
+@media (max-width: 576px)
+	.top-menu
+		&__logo-tablet
+			display: none
+		&__logo-mobile
+			display: block
+		&__item2
+			border: none
+			justify-content: center
+			flex-basis: 100%
+		&__item3
+			display: none
+		&__item4
+			display: none
+		&__item
+			height: 80px

@@ -1,0 +1,97 @@
+.menu{
+	text-align: right;
+	display: none;
+}
+
+
+
+.icon{
+	display: none;
+	width: 20px;
+	height: 16px;
+	position: relative;
+	cursor: pointer;
+}
+
+.icon span{
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background:#333;
+	border-radius: 9px;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.icon span:nth-child(1){
+	top:0;
+}
+
+.icon span:nth-child(2), .icon span:nth-child(3){
+	top: 8px;
+}
+.icon span:nth-child(4){
+	top: 16px;
+}
+
+@media (max-width: 576px){
+	.menu{
+		display: block;
+	}
+	.icon{
+		display: inline-block;
+		position: absolute;
+		right: 30px;
+		top: 32px;
+		z-index: 1000;
+	}
+
+	.links{
+		position: absolute;
+		display: none;
+		top: 82px;
+		right: 0;
+		left: 0;
+		z-index: 1000;
+	}
+
+.menu-item{
+	display: block;
+	padding: 25px 0;
+	text-align: center;
+	color: #444444;
+	background-color: #fff;
+	border-bottom: 1px solid #ececec;
+	font-family: 'Open Sans';
+	font-size: 17px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.menu.menu-open .icon span:nth-child(1){
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+.menu.menu-open .icon span:nth-child(2){
+	transform: rotate(45deg);
+}
+
+.menu.menu-open .icon span:nth-child(3){
+	transform: rotate(-45deg);
+}
+
+.menu.menu-open .icon span:nth-child(4){
+	top: 18px;
+	width: 0%;
+	left: 50%;
+}
+
+.menu.menu-open .links{
+	transition: 5s ease-in-out;
+	display: block;
+}
+}

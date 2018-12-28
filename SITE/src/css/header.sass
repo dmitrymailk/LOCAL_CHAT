@@ -1,0 +1,149 @@
+.header
+	background: url(../img/header/hero-desktop.png) center
+	display: flex
+	flex-basis: 1148px
+	height: 746px
+	flex-direction: column
+	align-content: center
+	align-items: center
+
+ &__list-goods
+		display: flex
+		list-style: none
+		padding: 0
+		margin: 0
+		justify-content: flex-start
+		width: 100%
+ &__shop-title
+		font-family: "Open Sans"
+		font-size: 51px
+		font-weight: 700
+		text-align: center
+		display: inline-block
+		width: 600px
+		margin: 80px 0 0 0
+
+	 
+		
+.list-goods
+	 &__item
+			font-family: "Open Sans"
+			font-size: 15px
+			font-weight: 700
+			display: flex
+			height: 50px
+			justify-content: flex-start
+			align-items: center
+			text-align: center
+	 &__item1
+		 flex-basis: 235px
+	 &__text1
+		 padding-left: 54px
+	 &__item2
+		 flex-basis: 601px
+		 flex-shrink: 10
+	 &__text2
+		 padding-left: 33px
+	 &__item3
+		 flex-basis: 313px
+	 &__text3
+		 padding-left: 36px
+		 font-size: 15px
+		 font-weight: 400
+
+.header
+	&__buttons
+		min-height: 123px
+		width: calc(100% - 100px)
+		display: flex
+		position: relative
+		margin-top: 354px
+	&__buttons:before
+		content: ''
+		background: url(../img/header/line.png) center no-repeat
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 45px
+		z-index: 1000
+
+		
+    
+.buttons
+	
+	&__button1
+		background-color: #56c3b2
+		flex-basis: 50%
+		display: flex
+		align-items: center
+		position: relative
+		
+	&__button2
+		background-color: #63d1bb
+		flex-basis: 50%
+		display: flex
+		align-items: center
+		position: relative
+		
+
+.button1
+	&__text
+		font-size: 20px
+		font-weight: 700
+		line-height: 30px
+		color: #ffffff
+		width: 111px
+		display: inline-block
+		padding-left: 36px
+	&__img
+		position: absolute
+		right: 36px
+		top: 30px
+
+.button2
+	&__text
+		font-size: 20px
+		font-weight: 700
+		line-height: 30px
+		color: #ffffff
+		width: 111px
+		display: inline-block
+		padding-left: 36px
+	&__img
+		position: absolute
+		right: 36px
+		top: 30px
+
+
+.gray
+	background-color: #f9f9f9
+
+@media (max-width: 768px)
+	.header
+		&__shop-title
+			font-size: 43px
+			font-weight: 700
+			width: 494px
+
+@media (max-width: 576px)
+	.header
+		background: url(../img/header/hero-mobile.png) top no-repeat
+		height: 500px
+		&__list-goods
+			display: none
+		&__shop-title
+			font-size: 27px
+			font-weight: 700
+			margin-top: 65px
+			width: 244px
+		&__buttons
+			flex-direction: column
+			height: 206px
+			margin-top: 120px
+			width: 100%
+		&__buttons:before
+			display: none
+
+.button2
+	&__img
+		right: 25px

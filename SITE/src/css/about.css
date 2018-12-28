@@ -1,0 +1,109 @@
+.about {
+  -ms-flex-preferred-size: 698px;
+      flex-basis: 698px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__title {
+  font-family: "Open Sans";
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 57px;
+  margin: 0 0 60px 0;
+}
+
+.about__line-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-bottom: 60px;
+}
+
+.line-item__item1 {
+  -ms-flex-preferred-size: 310px;
+      flex-basis: 310px;
+  height: 110px;
+  margin-right: 40px;
+  background-color: #fff;
+}
+
+.line-item__item2 {
+  -ms-flex-preferred-size: 310px;
+      flex-basis: 310px;
+  height: 110px;
+  background-color: #fff;
+}
+
+.item-img {
+  margin-left: 8px;
+}
+
+.item-text__text {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 13px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__title {
+    font-size: 43px;
+    display: inline-block;
+    -ms-flex-preferred-size: 679px;
+        flex-basis: 679px;
+  }
+  .item-text__text {
+    word-break: break-all;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+
+@media (max-width: 578px) {
+  .about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .about__title {
+    font-size: 25px;
+    display: inline-block;
+    -ms-flex-preferred-size: 296px;
+        flex-basis: 296px;
+    margin-bottom: 38px;
+  }
+  .about__line-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 35px;
+  }
+  .line-item__item1 {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+  .item-text__text {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    word-break: keep-all;
+  }
+}
+/*# sourceMappingURL=about.css.map */
